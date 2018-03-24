@@ -1,0 +1,137 @@
+/*Yates Design Image Hover Effect*/
+.border-hover .et_pb_promo_description { position: static !important; }
+
+.border-hover .et_pb_column {
+    overflow: hidden;
+    position: relative;
+}
+
+.border-hover .et_pb_column img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.border-hover .et_pb_column:hover img {
+    transform: scale(1.1);
+}
+
+.border-hover .et_pb_column:hover .et_pb_image:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    content: '';
+}
+
+.border-hover .et_pb_column .et_pb_promo_description:before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s,
+    -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.border-hover .et_pb_column .et_pb_promo_description:after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s,
+    -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.border-hover .et_pb_column:hover .et_pb_promo_description:before, .border-hover .et_pb_column:hover .et_pb_promo_description:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.border-hover .et_pb_column .et_pb_promo_description h2 {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.border-hover .et_pb_column .et_pb_promo_description p {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.border-hover .et_pb_column:hover .et_pb_promo_description h2 {
+    opacity: 1;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.border-hover .et_pb_column:hover .et_pb_promo_description p {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.border-hover .et_pb_promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.border-hover .et_pb_promo_button {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.border-hover .et_pb_promo_description {
+    position: static !important;
+}
